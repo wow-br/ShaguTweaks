@@ -20,9 +20,9 @@ local function CreateGoldString(money)
   local copper = floor(mod(money,100))
 
   local string = ""
-  if gold > 0 then string = string .. "|cffffffff" .. gold .. "|cffffd700g" end
-  if silver > 0 or gold > 0 then string = string .. "|cffffffff " .. silver .. "|cffc7c7cfs" end
-  string = string .. "|cffffffff " .. copper .. "|cffeda55fc"
+  if gold > 0 then string = string .. "|cffffffff" .. gold .. "|cffffd700" .. T["g"] end
+  if silver > 0 or gold > 0 then string = string .. "|cffffffff " .. silver .. "|cffc7c7cf" .. T["s"] end
+  string = string .. "|cffffffff " .. copper .. "|cffeda55f" .. T["c"]
 
   return string
 end
