@@ -3872,9 +3872,15 @@ ShaguTweaks.SellValueDB = data
 
 local function AddVendorPrices(frame, id, count)
   if ShaguTweaks.SellValueDB[id] and ShaguTweaks.SellValueDB[id] > 0 then
-    SetTooltipMoney(frame, ShaguTweaks.SellValueDB[id] * count)
-    frame:Show()
+    if IsShiftKeyDown() then
+      SetTooltipMoney(frame, ShaguTweaks.SellValueDB[id])
+    else
+      SetTooltipMoney(frame, ShaguTweaks.SellValueDB[id] * count)
+    end
+  else
+    GameTooltip:AddLine(ITEM_UNSELLABLE, 1.0, 1.0, 1.0)
   end
+  frame:Show()
 end
 
 module.enable = function(self)
