@@ -9,6 +9,9 @@ local cmatch = ShaguTweaks.cmatch
 local rgbhex = ShaguTweaks.rgbhex
 local strsplit = ShaguTweaks.strsplit
 local friendinfo = gsub(gsub(FRIENDS_LEVEL_TEMPLATE,"%%s","%%s %%s"),"%%d","%%s")
+if GetLocale() == "ptBR" then
+  friendinfo = "%2$s Nível %1$s %3$s"
+end
 
 local module = ShaguTweaks:register({
   title = T["Social Colors"],

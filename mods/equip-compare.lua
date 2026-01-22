@@ -88,6 +88,13 @@ module.enable = function(self)
       ["INVTYPE_CROSSBOW"] = "석궁",
       ["INVTYPE_PROJECTILE"] = "투사체",
     },
+    ["ptBR"] = {
+      ["INVTYPE_WAND"] = "Varinha",
+      ["INVTYPE_THROWN"] = "Arremesso",
+      ["INVTYPE_GUN"] = "Arma de fogo",
+      ["INVTYPE_CROSSBOW"] = "Besta",
+      ["INVTYPE_PROJECTILE"] = "Projétil",
+    },
     ["ruRU"] = {
       ["INVTYPE_WAND"] = "Жезл",
       ["INVTYPE_THROWN"] = "Метательное",

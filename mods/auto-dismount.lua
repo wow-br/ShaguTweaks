@@ -22,6 +22,8 @@ module.enable = function(self)
     "^Aumenta la velocidad en un (.+)%%",
     -- frFR
     "^Augmente la vitesse de (.+)%%",
+    -- ptBR
+    "^Aumenta em (.+)%% a velocidade",
     -- ruRU
     "^Скорость увеличена на (.+)%%",
     -- koKR
